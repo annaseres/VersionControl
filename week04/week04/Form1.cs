@@ -15,6 +15,11 @@ namespace week04
     public partial class Form1 : Form
     {
 
+        Excel.Application xlApp;
+        Excel.Workbook xlWB;
+        Excel.Worksheet xlSheet;
+
+
         RealEstateEntities context = new RealEstateEntities();
         List<Flat> Flats;
 
@@ -29,6 +34,34 @@ namespace week04
         {
             Flats = context.Flat.ToList();
             
+        }
+
+        public void CreateTabel()
+        {
+            try
+            {
+                xlApp = new Excel.Application();
+
+                xlWB = xlApp.Workbooks.Add(Missing.Value);
+
+                xlSheet = xlWB.ActiveSheet;
+
+                
+                //CreateTable(); 
+
+                xlApp.Visible = true;
+                xlApp.UserControl = true;
+            }
+            catch (Exception ex) 
+            {
+                string errMsg = string.Format("Error: {0}\nLine: {1}", ex.Message, ex.Source);
+                MessageBox.Show(errMsg, "Error");
+
+                xlWB.Close(false, Type.Missing, Type.Missing);
+                xlApp.Quit();
+                xlWB = null;
+                xlApp = null;
+            }
         }
 
         
