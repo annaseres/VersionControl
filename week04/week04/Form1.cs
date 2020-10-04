@@ -125,6 +125,16 @@ namespace week04
                 headerRange.RowHeight = 40;
                 headerRange.Interior.Color = Color.LightBlue;
                 headerRange.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+
+                int lastRowID = xlSheet.UsedRange.Rows.Count;
+                Excel.Range wholetable=xlSheet.get_Range(GetCell(2,1), GetCell(lastRowID, headers.Length));
+                wholetable.BorderAround2(Excel.XlLineStyle.xlContinuous, Excel.XlBorderWeight.xlThick);
+                wholetable.Font.Bold = true;
+                wholetable.Interior.Color = Color.LightYellow;
+
+                Excel.Range utolso = xlSheet.get_Range(GetCell(2, headers.Length), GetCell(lastRowID, headers.Length));
+                utolso.Interior.Color = Color.LightGreen;
+
             }
         }
 
