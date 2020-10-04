@@ -36,10 +36,11 @@ namespace week04
             
         }
 
-        public void CreateTabel()
+        public void CreateExcel()
         {
             try
             {
+
                 xlApp = new Excel.Application();
 
                 xlWB = xlApp.Workbooks.Add(Missing.Value);
