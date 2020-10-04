@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Reflection;
 
 namespace week04
 {
@@ -26,6 +28,9 @@ namespace week04
         private void LoadData()
         {
             Flats = context.Flat.ToList();
+            
         }
+
+        
     }
 }
