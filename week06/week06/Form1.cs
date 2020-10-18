@@ -19,13 +19,19 @@ namespace week06
 
         BindingList<RateData> Rates = new BindingList<RateData>();
 
+        BindingList<string> Currencies = new BindingList<string>();
+        
        
 
         public Form1()
         {
             InitializeComponent();
 
+
+
             RefreshData();
+
+            comboBox1.DataSource = Currencies;
 
         }
 
