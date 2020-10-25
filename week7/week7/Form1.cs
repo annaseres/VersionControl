@@ -96,7 +96,7 @@ namespace week7
 
                 for (int i = 0; i < Population.Count; i++)
                 {
-
+                    
                 }
 
                 int nbrOfMales = (from x in Population
@@ -108,6 +108,8 @@ namespace week7
                 Console.WriteLine(
                     string.Format("Év:{0} Fiúk:{1} Lányok:{2}", year, nbrOfMales, nbrOfFemales));
             }
+
+
         }
     }
 }
