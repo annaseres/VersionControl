@@ -35,11 +35,13 @@
             this.btnSelectCar = new System.Windows.Forms.Button();
             this.btnSelectBall = new System.Windows.Forms.Button();
             this.lblNext = new System.Windows.Forms.Label();
+            this.btnColor = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.btnColor);
             this.mainPanel.Controls.Add(this.lblNext);
             this.mainPanel.Controls.Add(this.btnSelectBall);
             this.mainPanel.Controls.Add(this.btnSelectCar);
@@ -60,7 +62,7 @@
             // 
             // btnSelectCar
             // 
-            this.btnSelectCar.Location = new System.Drawing.Point(562, 418);
+            this.btnSelectCar.Location = new System.Drawing.Point(493, 413);
             this.btnSelectCar.Name = "btnSelectCar";
             this.btnSelectCar.Size = new System.Drawing.Size(75, 23);
             this.btnSelectCar.TabIndex = 0;
@@ -69,7 +71,7 @@
             // 
             // btnSelectBall
             // 
-            this.btnSelectBall.Location = new System.Drawing.Point(658, 418);
+            this.btnSelectBall.Location = new System.Drawing.Point(586, 412);
             this.btnSelectBall.Name = "btnSelectBall";
             this.btnSelectBall.Size = new System.Drawing.Size(75, 23);
             this.btnSelectBall.TabIndex = 1;
@@ -79,11 +81,21 @@
             // lblNext
             // 
             this.lblNext.AutoSize = true;
-            this.lblNext.Location = new System.Drawing.Point(474, 423);
+            this.lblNext.Location = new System.Drawing.Point(419, 423);
             this.lblNext.Name = "lblNext";
             this.lblNext.Size = new System.Drawing.Size(68, 13);
             this.lblNext.TabIndex = 2;
             this.lblNext.Text = "Coming next:";
+            // 
+            // btnColor
+            // 
+            this.btnColor.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnColor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColor.Location = new System.Drawing.Point(694, 412);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(75, 23);
+            this.btnColor.TabIndex = 3;
+            this.btnColor.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -107,6 +119,7 @@
         private System.Windows.Forms.Label lblNext;
         private System.Windows.Forms.Button btnSelectBall;
         private System.Windows.Forms.Button btnSelectCar;
+        private System.Windows.Forms.Button btnColor;
     }
 }
 
