@@ -10,4 +10,6 @@ namespace week8.Abstractions
     {
         Toy CreateNew();
     }
+
+
 }
