@@ -71,6 +71,8 @@ namespace week8
         private void btnSelectBall_Click(object sender, EventArgs e)
         {
             Factory = new BallFactory();
+            
+
         }
 
         private void DisplayNext()
